@@ -1,39 +1,92 @@
 * {
   margin: 0;
   padding: 0;
+  outline: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-size: 14px;
+  font: 16px sans-serif;
 }
 
-div {
-  width: 100%;
+.container {
+  width: 100wv;
   margin: 20px;
 }
 
-div li {
-  display: flex;
-  align-items: center;
+.container ul {
+  list-style: none;
 }
 
-div li + li {
-  margin-top: 15px;
+.container li {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #27262b;
+  border-radius: 4px;
+  transition: background 0.1s;
+}
+
+.container li:hover {
+  background: #2e2d33;
+}
+
+.container li + li {
+  margin-top: 16px;
+}
+
+.container li h4 {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container li #techs {
+  margin-top: 8px;
+}
+
+.container li #techs span {
+  width: fit-content;
+  padding: 8px 16px;
+  display: inline-block;
+  font-size: 12px;
+  background: #4c3b83;
+  border-radius: 16px;
+}
+
+.container li #techs span + span {
+  margin-left: 4px;
 }
 
 button {
-  background: #7159c1;
-  color: #fff;
-  border: 0;
+  margin-top: 16px;
   padding: 10px 15px;
-  cursor: pointer;
-  margin-top: 15px;
+  
   font-weight: bold;
   font-size: 14px;
+
+  color: #fff;
+  background: #7159c1;
+
+  border: 0;
+  border-radius: 4px;
+
+  cursor: pointer;
+  transition: background 0.1s;
 }
 
-div li button {
-  margin: 0 15px;
+button:hover {
+  background: #5b479c;
+}
+
+.container li button {
+  margin: initial;
   background: #ca4949;
+  border-radius: 4px;
+  transition: background 0.1s;
+}
+
+.container li button:hover {
+  background: #a53b3b;
 }
